@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Forms</title>
+	<!--    css    -->
+	<link rel="stylesheet" href="../1GlobalDirectory/style.css">
+	<link rel="stylesheet" href="../1GlobalDirectory/fonts-material.css">
+	<link rel="stylesheet" href="css/forms.css">
+	<!--    js    -->
+	<script type="text/javascript" src="js/forms.js" async></script>
+</head>
+<body>
+
+<div class="containerForm">
+	<form action="" method="get" class="form_install">
+		<div class="input" data-count="word|5">
+			<input type="text" name="name" class="text inputUI" id="name" data-placeholder="name">
+			<label for="name" class="place">Name</label>
+		</div>
+		<div class="icon">
+			<i class="icon-perm_contact_calendar iconUI"></i>
+			<div class="input" data-count="letter|10">
+				<input type="password" name="textFiledIcon" class="text inputUI" id="textFieldIcon" data-placeholder="textField icon">
+				<label for="textFieldIcon" class="place">Text field icon</label>
+				<span class="info">icon field</span>
+			</div>
+		</div>
+		<!--textarea-->
+		<div class="input" data-count="word|100">
+			<textarea name="verify" id="verify" cols="30" rows="10" class="text inputUI" data-placeholder="verify"></textarea>
+			<label for="verify" class="place">Verify code</label>
+		</div>
+		<!--checkbox-->
+		<div class="input">
+			<input type="checkbox" id="check" name="check">
+			<label for="check" class="checkbox">Checkbox</label>
+		</div>
+		<!--radiobutton-->
+		<div class="input">
+			<input type="radio" id="radio" name="radio">
+			<label for="radio" class="radio">Radio button</label>
+		</div>
+		<!---->
+		<div class="input">
+			<input type="submit" value="enviar">
+		</div>
+	</form>
+</div>
+
+</body>
+</html>

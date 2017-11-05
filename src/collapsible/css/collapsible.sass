@@ -1,0 +1,48 @@
+@import "../../1GlobalDirectory/style"
+
+.collapsible
+	position: relative
+	width: 100%
+	display: flex
+	flex-flow: row wrap
+	justify-content: center
+	align-items: center
+	list-style: none
+	& .popup
+		margin: 0 30px
+	& .collapse
+		position: relative
+		width: 100%
+		background: $whiteColor
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 10px 0 rgba(0, 0, 0, 0.1)
+		transition: all .3s ease
+		&[data-active="popup"]
+			margin: 30px 0
+			width: 120%
+		&[data-active] .content
+			padding: 2rem
+		& .header
+			display: flex
+			position: relative
+			padding: 1rem
+			font-size: 16px
+			width: 100%
+			flex-flow: row nowrap
+			align-items: center
+			cursor: pointer
+			border-bottom: solid 1px $hrTarget
+			& i
+				font-size: 1.6rem
+				padding: 0 1rem 0 0
+		& .content
+			cursor: pointer
+			position: relative
+			width: 100%
+			display: flex
+			padding: 0 2rem
+			flex-flow: row wrap
+			justify-content: center
+			align-items: center
+			overflow: hidden
+			height: 0
+			transition: all .3s ease

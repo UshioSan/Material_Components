@@ -1,0 +1,107 @@
+/* line 31, ../../1GlobalDirectory/style.sass */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* line 37, ../../1GlobalDirectory/style.sass */
+body {
+  background: #F2F2F2;
+}
+
+/* line 3, collapsible.sass */
+.collapsible {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+/* line 11, collapsible.sass */
+.collapsible .popup {
+  margin: 0 30px;
+}
+/* line 13, collapsible.sass */
+.collapsible .collapse {
+  position: relative;
+  width: 100%;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 19, collapsible.sass */
+.collapsible .collapse[data-active="popup"] {
+  margin: 30px 0;
+  width: 120%;
+}
+/* line 22, collapsible.sass */
+.collapsible .collapse[data-active] .content {
+  padding: 2rem;
+}
+/* line 24, collapsible.sass */
+.collapsible .collapse .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding: 1rem;
+  font-size: 16px;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  border-bottom: solid 1px #DDDDDD;
+}
+/* line 34, collapsible.sass */
+.collapsible .collapse .header i {
+  font-size: 1.6rem;
+  padding: 0 1rem 0 0;
+}
+/* line 37, collapsible.sass */
+.collapsible .collapse .content {
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 2rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/*# sourceMappingURL=collapsible.css.map */

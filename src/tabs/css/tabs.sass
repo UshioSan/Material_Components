@@ -1,0 +1,54 @@
+@import "../../1GlobalDirectory/style"
+
+.tabs
+	position: relative
+	width: 100%
+	list-style: none
+	display: flex
+	flex-flow: row nowrap
+	justify-content: flex-start
+	align-items: center
+	background: $whiteColor
+	border-bottom: solid 2px rgba($blackColor, 0.03)
+	& .indicator
+		position: absolute
+		top: 100%
+		left: 0
+		width: 0.5%
+		height: 2px
+		background: $pinkColor
+		transition: all .5s ease
+		z-index: 10
+	& .tab
+		position: relative
+		font-size: 16px
+		& a
+			padding: 15px 24px
+			display: inline-block
+			text-decoration: none
+			color: $greyColor
+			transition: all .3s ease
+			&:hover
+				color: $blackColor
+		&[data-active] a
+			color: $blackColor
+			
+	
+// content slide tabs
+.slideTabs
+	overflow: hidden
+	position: relative
+	white-space: nowrap
+	width: 100%
+	box-shadow: 0 2px 4px $shadowColor
+	background: $whiteColor
+	transition: all .3s ease
+	min-height: 30px
+	height: 30px
+	& .contentTab
+		position: relative
+		width: 100%
+		padding: 10px
+		display: inline-block
+		background: $whiteColor
+		transition: all 1s ease

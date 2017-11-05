@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Collapsible</title>
+	<!--css-->
+	<link rel="stylesheet" href="../1GlobalDirectory/style.css">
+	<link rel="stylesheet" href="../1GlobalDirectory/fonts-material.css">
+	<link rel="stylesheet" href="css/collapsible.css">
+	<!--js-->
+	<script src="js/collapsible.js"></script>
+</head>
+<body>
+
+<div class="container" style="position: relative; width: 70%; left: 50%; transform: translateX(-50%); padding: 30px 0;">
+	<ul class="collapsible">
+		<li class="collapse">
+			<div class="header"><i class="icon-cloud_queue"></i> Lorem ipsum dolor sit.</div>
+			<div class="content">
+				<div class="text">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, culpa cum debitis earum error
+						expedita fuga labore magni maxime natus nemo non numquam odio quisquam quos reprehenderit
+						tenetur vel voluptatem!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, culpa cum debitis earum error
+						expedita fuga labore magni maxime natus nemo non numquam odio quisquam quos reprehenderit
+						tenetur vel voluptatem!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, culpa cum debitis earum error
+						expedita fuga labore magni maxime natus nemo non numquam odio quisquam quos reprehenderit
+						tenetur vel voluptatem!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, culpa cum debitis earum error
+						expedita fuga labore magni maxime natus nemo non numquam odio quisquam quos reprehenderit
+						tenetur vel voluptatem!</p>
+				</div>
+			</div>
+		</li>
+		<li class="collapse">
+			<div class="header"><i class="icon-cloud_done"></i> Lorem ipsum dolor.</div>
+			<div class="content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus alias cumque dolor exercitationem,
+					expedita hic in maiores maxime minima nam nobis omnis provident quasi. Explicabo labore laudantium
+					nihil? Facilis, sequi.</p>
+			</div>
+		</li>
+		<li class="collapse">
+			<div class="header"><i class="icon-cloud_off"></i> Lorem ipsum dolor.</div>
+			<div class="content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi autem blanditiis cupiditate
+					eligendi enim, excepturi fuga impedit labore libero magni minus nam neque odio odit porro quia
+					temporibus voluptates.</p>
+			</div>
+		</li>
+		<li class="collapse">
+			<div class="header"><i class="icon-cloud_circle"></i> Lorem ipsum dolor.</div>
+			<div class="content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur atque aut, commodi cum ea,
+					necessitatibus reiciendis repudiandae sapiente soluta suscipit, ullam vero. Deserunt eveniet optio
+					repellat rerum, sunt totam veniam.</p>
+			</div>
+		</li>
+	</ul>
+</div>
+
+<script type="text/javascript">
+	collapseFX({
+		element: document.querySelectorAll(".collapsible"),
+		effect: "popup",
+		accordion: true
+	});
+</script>
+
+</body>
+</html>

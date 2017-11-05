@@ -1,0 +1,49 @@
+@import "../../1GlobalDirectory/style"
+
+
+.backgroundModal
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background: rgba($blackColor, 0.3)
+	display: flex
+	flex-flow: row wrap
+	justify-content: center
+	align-items: center
+	& .modal
+		position: relative
+		background: $whiteColor
+		max-width: 50%
+		padding: 2em 2em 0 2em
+		display: flex
+		flex-flow: row wrap
+		justify-content: center
+		align-items: center
+		border-radius: 3px
+		box-shadow: 5px 5px 6px rgba($blackColor, 0.2), 3px 3px 6px rgba($blackColor, 0.2), 0 0 6px rgba($blackColor, 0.1)
+		& > .header
+			position: relative
+			width: 100%
+			font-size: 2.28rem
+		& > .content
+			position: relative
+			width: 100%
+			padding: 1em 0 4em 0
+			line-height: 25px
+			font-size: 16px
+			color: #707070
+		& > .footer
+			position: absolute
+			bottom: 0
+			width: 100%
+			display: flex
+			flex-flow: row wrap
+			justify-content: flex-end
+			align-items: center
+			padding: .4rem .4rem .2rem .4rem
+			& > .btn
+				color: $blackColor !important
+				font-size: 16px
+				text-transform: uppercase

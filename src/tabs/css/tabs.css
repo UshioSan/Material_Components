@@ -1,0 +1,97 @@
+/* line 31, ../../1GlobalDirectory/style.sass */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* line 37, ../../1GlobalDirectory/style.sass */
+body {
+  background: #F2F2F2;
+}
+
+/* line 3, tabs.sass */
+.tabs {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFFFF;
+  border-bottom: solid 2px rgba(0, 0, 0, 0.03);
+}
+/* line 13, tabs.sass */
+.tabs .indicator {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0.5%;
+  height: 2px;
+  background: #E91E63;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  z-index: 10;
+}
+/* line 22, tabs.sass */
+.tabs .tab {
+  position: relative;
+  font-size: 16px;
+}
+/* line 25, tabs.sass */
+.tabs .tab a {
+  padding: 15px 24px;
+  display: inline-block;
+  text-decoration: none;
+  color: #9E9E9E;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 31, tabs.sass */
+.tabs .tab a:hover {
+  color: #000;
+}
+/* line 33, tabs.sass */
+.tabs .tab[data-active] a {
+  color: #000;
+}
+
+/* line 38, tabs.sass */
+.slideTabs {
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  width: 100%;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  background: #FFFFFF;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  min-height: 30px;
+  height: 30px;
+}
+/* line 48, tabs.sass */
+.slideTabs .contentTab {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  display: inline-block;
+  background: #FFFFFF;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+/*# sourceMappingURL=tabs.css.map */

@@ -1,0 +1,84 @@
+@import "../../1GlobalDirectory/style"
+// styles
+.btn
+	display: inline-block
+	position: relative
+	padding: 0 2rem
+	border: none
+	background: none
+	font-size: 16px
+	cursor: pointer
+	overflow: hidden
+	margin: 3px
+	transition: all .3s ease
+	&:disabled
+		opacity: 0.3
+		color: $blackColor
+		background: $greyColor
+		cursor: default
+.ripple_effect
+	position: absolute
+	border-radius: 100%
+	width: 20px
+	height: 20px
+	transform: scale(0)
+	opacity: 0.5
+	pointer-events: none
+	transition: all .7s ease-out
+	background: rgba($blackColor, 0.3)
+// button flat
+.flat
+	padding: 8px 2rem
+	transition: all .3s ease
+	background: none
+	color: initial
+	&:disabled
+		background: none
+		
+// button raised
+.raised
+	padding: 8px 2rem
+	transition: all .3s ease
+	background: none
+	color: initial
+	border-radius: 2px
+	box-shadow: 0 0 3px rgba($blackColor, 0.3)
+	
+// color buttons raised
+@for $i from 1 through length($arrayColors)
+	.flat_#{nth($nameColors, $i)}
+		color: #{nth($arrayColors, $i)}
+		& .ripple_effect
+			@if nth($nameColors, $i) == "white"
+				background: rgba($blackColor, 0.5)
+			@else
+				background: rgba(nth($arrayColors, $i), 0.5)
+			
+// button floating
+.floating
+	width: 50px
+	height: 50px
+	padding: 0
+	border-radius: 100%
+	box-shadow: 2px 2px 3px rgba(#000, 0.3)
+	font-size: 25px
+// color floating
+@for $i from 1 through length($arrayColors)
+	.floating_#{nth($nameColors, $i)}, .raised_#{nth($nameColors, $i)}
+		background: nth($arrayColors, $i)
+		@if nth($nameColors, $i) == "white"
+			color: $blackColor
+			& .ripple_effect
+				background: rgba($blackColor, 0.5)
+		@else if nth($nameColors, $i) == "lightBlue"
+			color: $blackColor
+			& .ripple_effect
+				background: rgba($blackColor, 0.5)
+		@else if nth($nameColors, $i) == "lightGreen"
+			color: $blackColor
+			& .ripple_effect
+				background: rgba($blackColor, 0.5)
+		@else
+			color: $whiteColor
+			& .ripple_effect
+				background: rgba($whiteColor, 0.5)

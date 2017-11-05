@@ -1,0 +1,488 @@
+/* line 31, ../../1GlobalDirectory/style.sass */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* line 37, ../../1GlobalDirectory/style.sass */
+body {
+  background: #F2F2F2;
+}
+
+/* line 3, buttons.sass */
+.btn {
+  display: inline-block;
+  position: relative;
+  padding: 0 2rem;
+  border: none;
+  background: none;
+  font-size: 16px;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 3px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 14, buttons.sass */
+.btn:disabled {
+  opacity: 0.3;
+  color: #000;
+  background: #9E9E9E;
+  cursor: default;
+}
+
+/* line 19, buttons.sass */
+.ripple_effect {
+  position: absolute;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 0.5;
+  pointer-events: none;
+  -webkit-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* line 30, buttons.sass */
+.flat {
+  padding: 8px 2rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background: none;
+  color: initial;
+}
+/* line 35, buttons.sass */
+.flat:disabled {
+  background: none;
+}
+
+/* line 39, buttons.sass */
+.raised {
+  padding: 8px 2rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background: none;
+  color: initial;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+/* line 49, buttons.sass */
+.flat_black {
+  color: #000;
+}
+/* line 51, buttons.sass */
+.flat_black .ripple_effect {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* line 49, buttons.sass */
+.flat_white {
+  color: #FFFFFF;
+}
+/* line 51, buttons.sass */
+.flat_white .ripple_effect {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* line 49, buttons.sass */
+.flat_red {
+  color: #F44336;
+}
+/* line 51, buttons.sass */
+.flat_red .ripple_effect {
+  background: rgba(244, 67, 54, 0.5);
+}
+
+/* line 49, buttons.sass */
+.flat_pink {
+  color: #E91E63;
+}
+/* line 51, buttons.sass */
+.flat_pink .ripple_effect {
+  background: rgba(233, 30, 99, 0.5);
+}
+
+/* line 49, buttons.sass */
+.flat_purple {
+  color: #9C27B0;
+}
+/* line 51, buttons.sass */
+.flat_purple .ripple_effect {
+  background: rgba(156, 39, 176, 0.5);
+}
+
+/* line 49, buttons.sass */
+.flat_deepPurple {
+  color: #673AB7;
+}
+/* line 51, buttons.sass */
+.flat_deepPurple .ripple_effect {
+  background: rgba(103, 58, 183, 0.5);
+}
+
+/* line 49, buttons.sass */
+.flat_indigo {
+  color: #3F51B5;
+}
+/* line 51, buttons.sass */
+.flat_indigo .ripple_effect {
+  background: rgba(63, 81, 181, 0.5);
+}
+
+/* line 49, buttons.sass */
+.flat_blue {
+  color: #2196F3;
+}
+/* line 51, buttons.sass */
+.flat_blue .ripple_effect {
+  background: rgba(33, 150, 243, 0.5);
+}
+
+/* line 49, buttons.sass */
+.flat_lightBlue {
+  color: #03A9F4;
+}
+/* line 51, buttons.sass */
+.flat_lightBlue .ripple_effect {
+  background: rgba(3, 169, 244, 0.5);
+}
+
+/* line 49, buttons.sass */
+.flat_cyan {
+  color: #00BCD4;
+}
+/* line 51, buttons.sass */
+.flat_cyan .ripple_effect {
+  background: rgba(0, 188, 212, 0.5);
+}
+
+/* line 49, buttons.sass */
+.flat_teal {
+  color: #00BCD4;
+}
+/* line 51, buttons.sass */
+.flat_teal .ripple_effect {
+  background: rgba(0, 188, 212, 0.5);
+}
+
+/* line 49, buttons.sass */
+.flat_green {
+  color: #4CAF50;
+}
+/* line 51, buttons.sass */
+.flat_green .ripple_effect {
+  background: rgba(76, 175, 80, 0.5);
+}
+
+/* line 49, buttons.sass */
+.flat_lightGreen {
+  color: #8BC34A;
+}
+/* line 51, buttons.sass */
+.flat_lightGreen .ripple_effect {
+  background: rgba(139, 195, 74, 0.5);
+}
+
+/* line 49, buttons.sass */
+.flat_lime {
+  color: #CDDC39;
+}
+/* line 51, buttons.sass */
+.flat_lime .ripple_effect {
+  background: rgba(205, 220, 57, 0.5);
+}
+
+/* line 49, buttons.sass */
+.flat_yellow {
+  color: #CDDC39;
+}
+/* line 51, buttons.sass */
+.flat_yellow .ripple_effect {
+  background: rgba(205, 220, 57, 0.5);
+}
+
+/* line 49, buttons.sass */
+.flat_amber {
+  color: #FFC107;
+}
+/* line 51, buttons.sass */
+.flat_amber .ripple_effect {
+  background: rgba(255, 193, 7, 0.5);
+}
+
+/* line 49, buttons.sass */
+.flat_orange {
+  color: #FF9800;
+}
+/* line 51, buttons.sass */
+.flat_orange .ripple_effect {
+  background: rgba(255, 152, 0, 0.5);
+}
+
+/* line 49, buttons.sass */
+.flat_deepOrange {
+  color: #FF5722;
+}
+/* line 51, buttons.sass */
+.flat_deepOrange .ripple_effect {
+  background: rgba(255, 87, 34, 0.5);
+}
+
+/* line 49, buttons.sass */
+.flat_brown {
+  color: #795548;
+}
+/* line 51, buttons.sass */
+.flat_brown .ripple_effect {
+  background: rgba(121, 85, 72, 0.5);
+}
+
+/* line 49, buttons.sass */
+.flat_grey {
+  color: #9E9E9E;
+}
+/* line 51, buttons.sass */
+.flat_grey .ripple_effect {
+  background: rgba(158, 158, 158, 0.5);
+}
+
+/* line 49, buttons.sass */
+.flat_blueGrey {
+  color: #607D8B;
+}
+/* line 51, buttons.sass */
+.flat_blueGrey .ripple_effect {
+  background: rgba(96, 125, 139, 0.5);
+}
+
+/* line 58, buttons.sass */
+.floating {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border-radius: 100%;
+  -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  font-size: 25px;
+}
+
+/* line 67, buttons.sass */
+.floating_black, .raised_black {
+  background: #000;
+  color: #FFFFFF;
+}
+/* line 83, buttons.sass */
+.floating_black .ripple_effect, .raised_black .ripple_effect {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* line 67, buttons.sass */
+.floating_white, .raised_white {
+  background: #FFFFFF;
+  color: #000;
+}
+/* line 71, buttons.sass */
+.floating_white .ripple_effect, .raised_white .ripple_effect {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* line 67, buttons.sass */
+.floating_red, .raised_red {
+  background: #F44336;
+  color: #FFFFFF;
+}
+/* line 83, buttons.sass */
+.floating_red .ripple_effect, .raised_red .ripple_effect {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* line 67, buttons.sass */
+.floating_pink, .raised_pink {
+  background: #E91E63;
+  color: #FFFFFF;
+}
+/* line 83, buttons.sass */
+.floating_pink .ripple_effect, .raised_pink .ripple_effect {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* line 67, buttons.sass */
+.floating_purple, .raised_purple {
+  background: #9C27B0;
+  color: #FFFFFF;
+}
+/* line 83, buttons.sass */
+.floating_purple .ripple_effect, .raised_purple .ripple_effect {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* line 67, buttons.sass */
+.floating_deepPurple, .raised_deepPurple {
+  background: #673AB7;
+  color: #FFFFFF;
+}
+/* line 83, buttons.sass */
+.floating_deepPurple .ripple_effect, .raised_deepPurple .ripple_effect {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* line 67, buttons.sass */
+.floating_indigo, .raised_indigo {
+  background: #3F51B5;
+  color: #FFFFFF;
+}
+/* line 83, buttons.sass */
+.floating_indigo .ripple_effect, .raised_indigo .ripple_effect {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* line 67, buttons.sass */
+.floating_blue, .raised_blue {
+  background: #2196F3;
+  color: #FFFFFF;
+}
+/* line 83, buttons.sass */
+.floating_blue .ripple_effect, .raised_blue .ripple_effect {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* line 67, buttons.sass */
+.floating_lightBlue, .raised_lightBlue {
+  background: #03A9F4;
+  color: #000;
+}
+/* line 75, buttons.sass */
+.floating_lightBlue .ripple_effect, .raised_lightBlue .ripple_effect {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* line 67, buttons.sass */
+.floating_cyan, .raised_cyan {
+  background: #00BCD4;
+  color: #FFFFFF;
+}
+/* line 83, buttons.sass */
+.floating_cyan .ripple_effect, .raised_cyan .ripple_effect {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* line 67, buttons.sass */
+.floating_teal, .raised_teal {
+  background: #00BCD4;
+  color: #FFFFFF;
+}
+/* line 83, buttons.sass */
+.floating_teal .ripple_effect, .raised_teal .ripple_effect {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* line 67, buttons.sass */
+.floating_green, .raised_green {
+  background: #4CAF50;
+  color: #FFFFFF;
+}
+/* line 83, buttons.sass */
+.floating_green .ripple_effect, .raised_green .ripple_effect {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* line 67, buttons.sass */
+.floating_lightGreen, .raised_lightGreen {
+  background: #8BC34A;
+  color: #000;
+}
+/* line 79, buttons.sass */
+.floating_lightGreen .ripple_effect, .raised_lightGreen .ripple_effect {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* line 67, buttons.sass */
+.floating_lime, .raised_lime {
+  background: #CDDC39;
+  color: #FFFFFF;
+}
+/* line 83, buttons.sass */
+.floating_lime .ripple_effect, .raised_lime .ripple_effect {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* line 67, buttons.sass */
+.floating_yellow, .raised_yellow {
+  background: #CDDC39;
+  color: #FFFFFF;
+}
+/* line 83, buttons.sass */
+.floating_yellow .ripple_effect, .raised_yellow .ripple_effect {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* line 67, buttons.sass */
+.floating_amber, .raised_amber {
+  background: #FFC107;
+  color: #FFFFFF;
+}
+/* line 83, buttons.sass */
+.floating_amber .ripple_effect, .raised_amber .ripple_effect {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* line 67, buttons.sass */
+.floating_orange, .raised_orange {
+  background: #FF9800;
+  color: #FFFFFF;
+}
+/* line 83, buttons.sass */
+.floating_orange .ripple_effect, .raised_orange .ripple_effect {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* line 67, buttons.sass */
+.floating_deepOrange, .raised_deepOrange {
+  background: #FF5722;
+  color: #FFFFFF;
+}
+/* line 83, buttons.sass */
+.floating_deepOrange .ripple_effect, .raised_deepOrange .ripple_effect {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* line 67, buttons.sass */
+.floating_brown, .raised_brown {
+  background: #795548;
+  color: #FFFFFF;
+}
+/* line 83, buttons.sass */
+.floating_brown .ripple_effect, .raised_brown .ripple_effect {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* line 67, buttons.sass */
+.floating_grey, .raised_grey {
+  background: #9E9E9E;
+  color: #FFFFFF;
+}
+/* line 83, buttons.sass */
+.floating_grey .ripple_effect, .raised_grey .ripple_effect {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* line 67, buttons.sass */
+.floating_blueGrey, .raised_blueGrey {
+  background: #607D8B;
+  color: #FFFFFF;
+}
+/* line 83, buttons.sass */
+.floating_blueGrey .ripple_effect, .raised_blueGrey .ripple_effect {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/*# sourceMappingURL=buttons.css.map */

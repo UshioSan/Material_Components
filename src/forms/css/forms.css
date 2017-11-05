@@ -1,0 +1,310 @@
+@charset "UTF-8";
+/* line 31, ../../1GlobalDirectory/style.sass */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* line 37, ../../1GlobalDirectory/style.sass */
+body {
+  background: #F2F2F2;
+}
+
+/* line 3, forms.sass */
+.containerForm {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 13, forms.sass */
+.form_install {
+  position: relative;
+  width: 35%;
+  background: #FFFFFF;
+  padding: 20px;
+  border-radius: 3px;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+/* line 23, forms.sass */
+.input {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 30px 0 0 0;
+}
+/* line 30, forms.sass */
+.input input[type="checkbox"], .input input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+/* line 33, forms.sass */
+.input input[type="checkbox"]:checked ~ .checkbox:before, .input input[type="radio"]:checked ~ .checkbox:before {
+  background: #9E9E9E;
+}
+/* line 35, forms.sass */
+.input input[type="checkbox"]:checked ~ .checkbox:after, .input input[type="radio"]:checked ~ .checkbox:after {
+  opacity: 1;
+}
+/* line 37, forms.sass */
+.input input[type="checkbox"]:checked ~ .radio:before, .input input[type="radio"]:checked ~ .radio:before {
+  border-color: #9E9E9E;
+}
+/* line 39, forms.sass */
+.input input[type="checkbox"]:checked ~ .radio:after, .input input[type="radio"]:checked ~ .radio:after {
+  -webkit-transform: translateY(-50%) scale(1);
+          transform: translateY(-50%) scale(1);
+}
+/* line 41, forms.sass */
+.input textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100px;
+  max-height: 200px;
+}
+/* line 46, forms.sass */
+.input .text {
+  position: relative;
+  width: 100%;
+  padding: 3px 0;
+  font-size: 16px;
+  background: none;
+  border: none;
+  border-bottom: solid 1px #9E9E9E;
+  -webkit-transition: border-bottom-color 0.3s ease;
+  transition: border-bottom-color 0.3s ease;
+}
+/* line 55, forms.sass */
+.input .text:hover {
+  border-bottom-color: #000;
+}
+/* line 57, forms.sass */
+.input .text::-webkit-input-placeholder {
+  color: rgba(158, 158, 158, 0.5);
+}
+.input .text:-ms-input-placeholder {
+  color: rgba(158, 158, 158, 0.5);
+}
+.input .text::placeholder {
+  color: rgba(158, 158, 158, 0.5);
+}
+/* line 59, forms.sass */
+.input .place {
+  position: absolute;
+  font-size: 16px;
+  color: #9E9E9E;
+  padding: 3px 0;
+  left: 0;
+  top: 30px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+/* line 67, forms.sass */
+.input .info {
+  position: relative;
+  width: 50%;
+  color: #9E9E9E;
+  padding: 5px 0 0 0;
+  font-size: 11px;
+}
+/* line 73, forms.sass */
+.input .counter {
+  text-align: right;
+}
+/* line 75, forms.sass */
+.input .toggleTypePassword {
+  position: absolute;
+  font-size: 16px;
+  right: 0;
+  padding: 5px;
+  top: 30px;
+  color: #9E9E9E;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 84, forms.sass */
+.input .toggleTypePassword:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-radius: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 95, forms.sass */
+.input .toggleTypePassword:hover {
+  color: #000;
+}
+/* line 97, forms.sass */
+.input .toggleTypePassword:active::after {
+  width: 120%;
+  height: 120%;
+}
+/* line 100, forms.sass */
+.input .checkbox {
+  position: relative;
+  color: #9E9E9E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* line 109, forms.sass */
+.input .checkbox:before {
+  content: "";
+  position: relative;
+  padding: 8px;
+  border: solid 2px #9E9E9E;
+  border-radius: 2px;
+  margin: 0 15px 0 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 117, forms.sass */
+.input .checkbox:after {
+  content: "";
+  font-family: "material", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 1px;
+  font-size: 18px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-weight: bold;
+  color: #FFFFFF;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 129, forms.sass */
+.input .radio {
+  position: relative;
+  color: #9E9E9E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* line 138, forms.sass */
+.input .radio:before {
+  content: "";
+  position: relative;
+  padding: 8px;
+  border: solid 2px #9E9E9E;
+  border-radius: 100%;
+  margin: 0 15px 0 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 146, forms.sass */
+.input .radio:after {
+  content: "";
+  position: absolute;
+  padding: 6px;
+  left: calc(8px - 4px);
+  top: 50%;
+  -webkit-transform: translateY(-50%) scale(0);
+          transform: translateY(-50%) scale(0);
+  background: #9E9E9E;
+  border-radius: 100%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* line 156, forms.sass */
+.icon {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+/* line 163, forms.sass */
+.icon .iconUI {
+  position: relative;
+  padding: 0 10px 0 0;
+  font-size: 24px;
+  color: #9E9E9E;
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/*# sourceMappingURL=forms.css.map */

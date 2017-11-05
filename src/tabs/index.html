@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tabs</title>
+	<!--css-->
+	<link rel="stylesheet" href="css/tabs.css">
+	<!--js-->
+	<script src="js/tabs.js"></script>
+</head>
+<body data-placeholder="hola que hace">
+
+	<div class="mainTabs">
+		<ul class="tabs">
+			<li class="tab"><a href="#Tab1">Tab 1</a></li>
+			<li class="tab"><a href="#Tab2">Tab 2</a></li>
+			<li class="tab"><a href="#Tab3">Tab 3</a></li>
+			<li class="tab"><a href="#Tab4">Tab 4</a></li>
+			<li class="tab"><a href="#Tab5">Tab 5</a></li>
+		</ul>
+		<div class="slideTabs">
+			<div class="contentTab" id="Tab1">Content in the tab 1</div>
+			<div class="contentTab" id="Tab2">Content in the tab 2</div>
+			<div class="contentTab" id="Tab3">
+				<img src="https://i.imgur.com/7048gLf.jpg" alt="" height="400px" width="auto">
+			</div>
+			<div class="contentTab" id="Tab4">Content in the tab 4</div>
+			<div class="contentTab" id="Tab5">Content in the tab 5</div>
+		</div>
+	</div>
+	<br><br><br><br><br>
+	<div class="mainTabs">
+		<ul class="tabs">
+			<li class="tab"><a href="#TabCase1">TabCase 1</a></li>
+			<li class="tab"><a href="#TabCase2">TabCase 2</a></li>
+			<li class="tab"><a href="#TabCase3">TabCase 3</a></li>
+			<li class="tab"><a href="#TabCase4">TabCase 4</a></li>
+			<li class="tab"><a href="#TabCase5">TabCase 5</a></li>
+		</ul>
+		<div class="slideTabs">
+			<div class="contentTab" id="TabCase1">Hole que hace X1</div>
+			<div class="contentTab" id="TabCase2">Hole que hace X2</div>
+			<div class="contentTab" id="TabCase3">Hole que hace X3</div>
+			<div class="contentTab" id="TabCase4">Hole que hace X4</div>
+			<div class="contentTab" id="TabCase5">Hole que hace X5</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		let parentTabs = document.querySelectorAll(".tabs");
+		
+		[].forEach.call(parentTabs, e=>{
+			let c = new Tabs(e);
+		});
+	</script>
+
+</body>
+</html>
